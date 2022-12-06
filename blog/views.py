@@ -27,8 +27,8 @@ def post_share(request, post_id):
     else:
         form = EmailPostForm()
     return render(request, 'blog/post/share.html', {'post': post,
-                                                'form': form}
-                                                'sent': sent})
+                                                    'form': form,
+                                                    'sent': sent})
 
 class PostListView(ListView):
     queryset = Post.published.all()
