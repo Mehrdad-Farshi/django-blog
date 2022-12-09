@@ -82,4 +82,4 @@ def post_detail(request, year, month, day, post):
                 'new_comment': new_comment,
                 'comment_form': comment_form,
                 })
-
+    
